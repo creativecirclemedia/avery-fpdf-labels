@@ -119,7 +119,7 @@ class LabelSheet
    * @throws InvalidArgumentException
    * @throws TypeError
    */
-  public function __construct($template = null)
+  public function __construct($template)
   {
     if (is_array($template)) {
       $this->template = $template;
