@@ -1,6 +1,6 @@
 {
-    "name": "amattu2/avery-fpdf-labels",
-    "description": "A PHP library designed to assist in building Avery Label sheets with FPDF",
+    "name": "creativecirclemedia/avery-fpdf-labels",
+    "description": "Modified version of amattu2/avery-fpdf-labels.git",
     "type": "library",
     "license": "AGPL-3.0-or-later",
     "autoload": {
@@ -10,8 +10,8 @@
     },
     "authors": [
         {
-            "name": "Alec M.",
-            "email": "alecmattu1234@gmail.com"
+            "name": "Creative Circle Media Solutions",
+            "email": "dev@creativecirclemedia.com"
         }
     ],
     "require-dev": {
