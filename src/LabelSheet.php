@@ -119,13 +119,15 @@ class LabelSheet
    * @throws InvalidArgumentException
    * @throws TypeError
    */
-  public function __construct(string $template)
+  public function __construct($template = null)
   {
-    if (!array_key_exists($template, self::LABELS)) {
+    if (is_array($template)) {
+      $this->template = $template;
+    } elseif (!array_key_exists($template, self::LABELS)) {
       throw new InvalidArgumentException("Unknown label template {$template}");
+    }else{
+      $this->template = self::LABELS[$template];
     }
-
-    $this->template = self::LABELS[$template];
   }
 
   /**
